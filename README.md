@@ -17,6 +17,6 @@ that would calculate both the enemy's and mine shortest path. With this data the
 adapt to its conditions and act accordingly.
 
 My source code & guide on how to install and test my AI can be found @
-http://daraghmeh.github.io/MD-Quoridor/
+http://daraghmeh.github.io/Quoridor
 
 Property of Mohammad M. Daraghmeh
