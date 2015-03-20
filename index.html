@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Quoridor » Mohammad Daraghmeh by Daraghmeh</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+  </head>
+  <body>
+  
+<script>
+function RITPolicy() {
+    alert("Sorry :( As mentioned due to RIT Policy,uploading of code-source is forbidden!");
+}
+</script>
+
+      <div id="header">
+        <nav>
+          <li class="downloads"><a href="" onclick="RITPolicy()"><strike>View On GitHub</strike></a></li>
+          <li class="downloads"><a href="" onclick="RITPolicy()"><strike>ZIP</strike></a></li>
+          <li class="downloads"><a href="" onclick="RITPolicy()"><strike>TAR</strike></a></li>
+          <li class="title">Due to RIT Policy, This Repo is <strong>Private</strong></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Quoridor ~ Mohammad Daraghmeh</h1>
+          <p>Welcome, this is a ten week Python based project with the purpose of creating an Artificial intelligence (AI) to play the classical game Quoridor</p>
+          <hr>
+        </div>
+
+        <h1>
+<a name="overview-of-quoridor" class="anchor" href="#overview-of-quoridor"><span class="octicon octicon-link"></span></a>Overview of Quoridor</h1>
+
+<p>The abstract strategy game, Quoridor, is one that can be played with two to four player(s). Quoridor even though it is a game of simple rules it is surprisingly deep and strategic game. The whole object of the game is to advance your pawn to the opposite edge of the board.</p>
+
+<h2>
+<a name="depth-in-view-of-quoridor" class="anchor" href="#depth-in-view-of-quoridor"><span class="octicon octicon-link"></span></a>Depth-In view of Quoridor</h2>
+
+<p>As mentioned the objective of Quoridor is to advance your pawn to the opposite end of the board. With each turn, a player is given two decisions: move their pawn or place a wall. The standard setup of the game is two players each with ten walls. In turn, players can choose whether to move their pawn by one space Up,Down,Right,Left (no diagonals); or place a wall anywhere on the board. Pawns have to maneuver around walls with of course the end goal being to get to the other side. </p>
+
+<h2>
+<a name="languageplatform-" class="anchor" href="#languageplatform-"><span class="octicon octicon-link"></span></a>Language/Platform <img src="https://f.cloud.github.com/assets/4383833/966647/467e8110-0551-11e3-8d11-66763bdd9780.png" alt="Python"><img src="https://f.cloud.github.com/assets/4383833/966649/4aa2064a-0551-11e3-8d9a-ea25ee30d38c.png" alt="Eclipse">
+</h2>
+
+<p>This project was written in Python using the platform Eclipse. This project was not completely from scratch for a GUI was provided for visual representation and checking. The rest was written by me from scratch.</p>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/966560/dcadb1a0-054d-11e3-9f84-8b53e37ae7c6.png" alt="Line Break"></p>
+
+<h2>
+<a name="game-setup-" class="anchor" href="#game-setup-"><span class="octicon octicon-link"></span></a>Game Setup <img src="https://f.cloud.github.com/assets/4383833/966944/16216618-0560-11e3-9951-07e7cf6741c8.png" alt="Rule">
+</h2>
+
+<p>~ One board with 81 squares</p>
+
+<p>~ Two storage slots for walls</p>
+
+<p>~ Each player starts off in the center of this base line (Fig. 1)</p>
+
+<hr><h2>
+<a name="move-rules-" class="anchor" href="#move-rules-"><span class="octicon octicon-link"></span></a>Move Rules <img src="https://f.cloud.github.com/assets/4383833/966946/1c5ba552-0560-11e3-9a35-8d126efafb57.png" alt="Move">
+</h2>
+
+<p>~ Each player in turn, chooses to move his/her pawn or to put up one of his/her wall</p>
+
+<p>~ When a player runs out of walls, the player must move his/her pawn.</p>
+
+<p>~ The pawns are to move one square at a time (Fig. 2)</p>
+
+<p>~ Pawns must get around walls (Fig. 3)</p>
+
+<hr><h2>
+<a name="wall-rules-" class="anchor" href="#wall-rules-"><span class="octicon octicon-link"></span></a>Wall Rules <img src="https://f.cloud.github.com/assets/4383833/966945/18ec8454-0560-11e3-81a5-0092f16b50a4.png" alt="Wall">
+</h2>
+
+<p>~ The walls must be placed between 2 sets of 2 squares (Fig. 4)</p>
+
+<p>~ No wall is to completely seal off a player's end goal line. One slot must be open at all times (Fig. 5)</p>
+
+<hr><h2>
+<a name="jump-rules-" class="anchor" href="#jump-rules-"><span class="octicon octicon-link"></span></a>Jump Rules <img src="https://f.cloud.github.com/assets/4383833/966948/1c7e6bc8-0560-11e3-9e39-db0482f1229a.png" alt="Jump">
+</h2>
+
+<p>~ When two players are face to face on a neighboring squares and not separated by a wall, the player whose turn it is can jump said opponent's pawn, thus advancing an extra square. (Fig. 6)</p>
+
+<p>~ If there is a wall behind the said pawn, the player can place his pawn to the left or the right of the other pawn. (Fig. 8/9)</p>
+
+<hr><h2>
+<a name="end-game-" class="anchor" href="#end-game-"><span class="octicon octicon-link"></span></a>End Game <img src="https://f.cloud.github.com/assets/4383833/966950/1c8b7e30-0560-11e3-9295-44bf3389c98b.png" alt="End">
+</h2>
+
+<p>The ﬁrst player who reaches one of the 9 squares opposite his base line is the winner (Fig. 7)</p>
+
+<hr><h2>
+<a name="time-of-game-" class="anchor" href="#time-of-game-"><span class="octicon octicon-link"></span></a>Time of Game <img src="https://f.cloud.github.com/assets/4383833/966947/1c7ee544-0560-11e3-8828-7067126e57ec.png" alt="Time">
+</h2>
+
+<p>From 10 to 20 minutes. </p>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/966560/dcadb1a0-054d-11e3-9f84-8b53e37ae7c6.png" alt="Line Break"></p>
+
+<h1>
+<a name="how-to-use-my-code-" class="anchor" href="#how-to-use-my-code-"><span class="octicon octicon-link"></span></a><strong>How to use my Code</strong> <img src="https://f.cloud.github.com/assets/4383833/966949/1c82acec-0560-11e3-8eb9-4b9ebff8d6ed.png" alt="Code">
+</h1>
+
+<p>1) Download Zip or Tar (MohDar_Quoridor)</p>
+
+<p>2) Exact downloaded file</p>
+
+<p>3) Within the exacted folder are a few files looking similar to the image below:</p>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/485475/76e5db5a-b8f3-11e2-988e-658238f063fe.png" alt="Folder View"></p>
+
+<p>4) Best method to run the Quoridor's engine is through
+<a href="http://www.eclipse.org/downloads/">Eclipse Classic</a></p>
+
+<p>5) Once Eclipse is installed if you do not have the PyDev Python Plugin go to the below section:</p>
+
+<ul>
+<li><pre><code>  a. Installing Python Plugin
+</code></pre></li>
+<li><pre><code>  b. PyDev Configuration
+</code></pre></li>
+<li><pre><code>  c. PyDev Handle
+</code></pre></li>
+</ul><p>6) Create a new Python project with the following setup</p>
+
+<ul>
+<li><pre><code>  I. For "Grammar Version" select: 3.0
+</code></pre></li>
+<li><pre><code>  II. For "Interpreter" select the name of the Python 3.X
+</code></pre></li>
+<li><pre><code>  III. Unselect the checkbox for "Create default src folder...".
+</code></pre></li>
+<li><pre><code>  IV. Click the "finish" button
+</code></pre></li>
+</ul><p><img src="https://f.cloud.github.com/assets/4383833/485476/89c960b6-b8f3-11e2-8751-2eeaa5c861b1.png" alt="Python Project"></p>
+
+<p>7) Drag the exacted folder to the newly created project, you will see something similar to the below:</p>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/485484/f13a23d4-b8f3-11e2-9b4f-e7433c3e4a87.png" alt="Project View"></p>
+
+<p>8) Now in StudentPlayers, you will find the directory called MohDar13. This is where all the AI and good stuff is.</p>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/966560/dcadb1a0-054d-11e3-9f84-8b53e37ae7c6.png" alt="Line Break"></p>
+
+<h1>
+<a name="how-to-run-game-" class="anchor" href="#how-to-run-game-"><span class="octicon octicon-link"></span></a>How to Run Game <img src="https://f.cloud.github.com/assets/4383833/967057/f56faeac-0564-11e3-98c1-9d4d06e72c9b.png" alt="Run">
+</h1>
+
+<ol>
+<li>
+<p>Edit the config.txt in the project to your liking, the following are common edit areas:</p>
+
+<p>a. <em>API_KEY</em> ~ There is my personal API Key please be <strong>respectful</strong> of this fact  (e4cda5d2ce6df460c13)</p>
+
+<p>b. <em>PLAYER_MODULES</em> <em>Important area for selecting the AIs</em> (Possible Choices: Human,OKComputer,BeatMe,    and my module MohDar13)</p>
+
+<p>c. <em>PRE_MOVE</em> ~ Area for moves to be made before players get control</p>
+
+<p>d. <em>NUM_WALLS</em> ~ Wall count for players - Currently set for {1:20,2:10,4:5} meaning with 2 players each  player gets 10 walls. If 4 players each player gets 5 walls.</p>
+
+<p>e. <em>ANIMATION_SPEED</em> ~ Unit is in milliseconds between successive moves</p>
+</li>
+<li><p>The current config is set for my module (MohDar93) to versus another AI (BeatMe)</p></li>
+<li><p>To run simply right click on quoridor.py and click Run As - Python Run</p></li>
+<li><p>Enjoy and Give Credit where it is do.</p></li>
+</ol><p><img src="https://f.cloud.github.com/assets/4383833/966560/dcadb1a0-054d-11e3-9f84-8b53e37ae7c6.png" alt="Line Break"></p>
+
+<h3>
+<a name="installing-python-plugin" class="anchor" href="#installing-python-plugin"><span class="octicon octicon-link"></span></a><em><strong>Installing Python Plugin</strong></em>
+</h3>
+
+<ol>
+<li>Navigate to: Help-&gt;Install New Software...</li>
+<li>Click the "Add" button to view a pop-up window dialog.</li>
+<li>In "Name" enter: PyDev</li>
+<li>In "Location" enter: <a href="http://pydev.org/updates">http://pydev.org/updates</a>
+</li>
+<li>Click the "OK" button and the window presents information on PyDev.</li>
+<li>Select the checkbox next to "PyDev" and click the "Next" button.</li>
+<li>Re-select the "PyDev" entry and click the "Next" button.</li>
+<li>Select "Next", accept license agreement and click the "Finish" button.</li>
+<li>Now you are going to accept the certificate. One of these windows will bring up a checkbox that you     <em>must</em> check in order to correctly accept the certificate.</li>
+<li>If prompted, trust all certificates.</li>
+<li>Quit and restart Eclipse (It usually tells you a restart is necessary).</li>
+</ol><h3>
+<a name="pydev-configuration" class="anchor" href="#pydev-configuration"><span class="octicon octicon-link"></span></a><em><strong>PyDev Configuration</strong></em>
+</h3>
+
+<ol>
+<li>In Eclipse, go to: Window-&gt;Preferences.</li>
+<li>Go to: Pydev-&gt;Interpreter - Python.</li>
+<li>Click the "New..." button.</li>
+<li>In "Interpreter Name" enter: python3</li>
+<li>In "Interpreter Executable" click the "Browse" button and navigate to C:\Python33\python.exe. Click "Open" with python.exe highlighted. </li>
+<li>Click the "Ok" button two times.</li>
+<li>Click the "Apply" button. Python 3 now should be configured.</li>
+<li>Click "OK" to return to main window.</li>
+</ol><h3>
+<a name="pydev-handle" class="anchor" href="#pydev-handle"><span class="octicon octicon-link"></span></a><em><strong>PyDev Handle</strong></em>
+</h3>
+
+<ol>
+<li>In the top menu, go to preferences (on a Mac, it is under the Eclipse pulldown, and on Windows, it is under the Window pulldown). Go to: Preferences-&gt;PyDev-&gt;Builders</li>
+<li>In the lower part of the window, change the option for "How to handle .pyc/$py.class deletion" to "Only delete .pyc when .py delete is detected."</li>
+<li>Click the Apply button.</li>
+<li>Below is an image of the settings screen. (Note: If you have the Helios edition, this option does not exist; switch to the Indigo or Juno edition of eclipse.)</li>
+</ol><p><img src="https://f.cloud.github.com/assets/4383833/482094/eceb3f60-b886-11e2-9925-2200ce59f730.png" alt="PyDev Configuration"><img src="https://f.cloud.github.com/assets/4383833/966560/dcadb1a0-054d-11e3-9f84-8b53e37ae7c6.png" alt="Line Break"></p>
+
+<h2>
+<a name="figure" class="anchor" href="#figure"><span class="octicon octicon-link"></span></a>Figure</h2>
+
+<p><img src="https://f.cloud.github.com/assets/4383833/482005/d7b3eb3c-b882-11e2-8134-425ee1ebc29a.jpg" alt="Quoridor Rules"></p>
+
+<blockquote>
+<p>Credit: UI Creator: Adam Oest</p>
+
+<p>Created and Property of Mohammad M. <a href="https://github.com/Daraghmeh">Daraghmeh</a></p>
+</blockquote>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-40773425-5");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+    
+  </body>
+</html>
